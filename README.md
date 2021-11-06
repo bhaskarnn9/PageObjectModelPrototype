@@ -1,23 +1,6 @@
 This is a page-object-model framework
 Please refer to Project_Structure.png in root folder (/Gemini) for project directory structure
 
----------------------------------------------------------------------------------------------------
-Project-Directory
-     |--------- Src
-                    |--------- PageObject
-                                       |--------- Pages
-                                                    |--------- *Page.py (Implementation of methods that make use of the respective Locators declared in Locators.py) 
-                                       |--------- Locators.py
-                    |--------- TestBase
-                                       |--------- WebDriverSetup.py
-     |--------- Test
-                    |--------- Scripts
-                                       |--------- test_*.py (Implementation of test code)(There should be 1:1 mapping of *Page.py and test_*.py as it helps in making the code more modular)
-                    |--------- TestSuite
-                                       |--------- TestRunner.py (contains TestSuite, which is a collection of test cases)
-
-------------------------------------------------------------------------------------------------------
-
 There are three tests
 1. Launch HomePage (https://exchange.sandbox.gemini.com/)
 2. Launch HomePage --> click create new account --> click create business  acc --> navigate to register Institution page (https://exchange.sandbox.gemini.com/register/institution)
